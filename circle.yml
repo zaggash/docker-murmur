@@ -10,4 +10,4 @@ dependencies:
 test:
   override:
     - docker run -d -p 64738:64738 circle-murmur; sleep 10
-    - curl --retry 10 --retry-delay 5 -v http://localhost:64738
+    - telnet 127.0.0.1 64738
