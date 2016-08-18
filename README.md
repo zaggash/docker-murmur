@@ -32,12 +32,7 @@ docker run -d \
 
 Part of what makes our containers work so well is by allowing you to specify your own `PUID` and `PGID`. This avoids nasty permissions errors with relation to data volumes (`-v` flags). When an application is installed on the host OS it is normally added to the common group called users, Docker apps due to the nature of the technology can't be added to this group. So we added this feature to let you easily choose when running your containers.
 
-## Updates
-
-* Upgrade to the latest version simply `docker restart <container-name>`.
-* To monitor the logs of the container in realtime `docker logs -f <container-name>`.
-
 
 ## Versions
-
++ **18-08-2016:** Rebase to apline
 + **23-01-2016:** This is the standard Version type now. 

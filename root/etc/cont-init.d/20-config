@@ -1,0 +1,9 @@
+#!/usr/bin/with-contenv bash
+# Copy Config
+[[ ! -f /config/murmur.ini ]] && cp /defaults/murmur.ini /config/murmur.ini
+
+# Fix missing file
+[[ ! -f /config/murmur.log ]] && touch /config/murmur.log
+
+# Permissions
+chown -R abc:abc /config
