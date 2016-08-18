@@ -1,0 +1,2 @@
+#!/bin/bash
+/sbin/setuser abc /app/murmur/murmur.x86 -ini /config/murmur.ini -fg

@@ -1,0 +1,14 @@
+version: '2'
+services:
+  mumble_app:
+    image: zaggash/docker-murmur
+    environment:
+      PUID: 1000
+      PGID: 1000
+    volumes:
+      - /etc/localtime:/etc/localtime:ro
+      - /opt/docker_config/mumble_app:/config
+    ports:
+      - 64738:64738/tcp
+      - 64738:64738/udp
+
