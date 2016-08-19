@@ -6,7 +6,7 @@ ENV MURMUR_VERSION=1.2.16
 # install packages
 RUN \
  apk add --no-cache \
-	icu-libs
+	icu-libs \
  && wget \
         https://github.com/mumble-voip/mumble/releases/download/${MURMUR_VERSION}/murmur-static_x86-${MURMUR_VERSION}.tar.bz2 -O - |\
         bzcat -f |\
