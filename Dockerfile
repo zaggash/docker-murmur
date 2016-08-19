@@ -1,10 +1,7 @@
 FROM lsiobase/alpine
 MAINTAINER zaggash
 
-ENV MURMUR_VERSION=$( \
-	wget -q "https://api.github.com/repos/mumble-voip/mumble/releases/latest" -O - |\
-	awk '/tag_name/{print $4;exit}' FS='[""]' \
-	)
+ENV MURMUR_VERSION=1.2.16
 
 # install packages
 RUN \
