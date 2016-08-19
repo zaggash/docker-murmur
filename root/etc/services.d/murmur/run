@@ -1,5 +1,5 @@
 #!/usr/bin/with-contenv bash
 
 exec \
-	s6-setuidgid abc /usr/bin/murmurd \
+	s6-setuidgid abc /app/murmur/murmur.x86 \
 	-ini /config/murmur.ini -fg
