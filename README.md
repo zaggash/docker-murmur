@@ -43,3 +43,6 @@ To show the logs of a container, you can execute the following command :
 ```
 docker logs -f container_name
 ```
+
+You can edit the config in the /config folder.
+You need to restart the container to apply the change.
