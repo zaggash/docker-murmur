@@ -33,9 +33,13 @@ docker run -d \
 
 Sometimes when using data volumes (`-v` flags) permissions issues can arise between the host OS and the container. We avoid this issue by allowing you to specify the user `PUID` and group `PGID`. Ensure the data volume directory on the host is owned by the same user you specify and it will "just work" ™.
 
-In this instance `PUID=1001` and `PGID=1001`. To find yours use `id user` as below:
+
+### Usage
+
+The password is generated on first start.
+It is written in the logs.
+To show the logs of a container, you can execute the following command :
 
 ```
-  $ id <dockeruser>
-    uid=1001(dockeruser) gid=1001(dockergroup) groups=1001(dockergroup)
+docker logs -f container_name
 ```
