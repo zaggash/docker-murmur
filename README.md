@@ -1,4 +1,8 @@
-[![](https://imagelayers.io/badge/zaggash/docker-murmur:latest.svg)](https://imagelayers.io/?images=zaggash/docker-murmur:latest 'Get your own badge on imagelayers.io')
+Base on linuxserver.io baseimage but not supported by them directly
+
+# zaggash/docker-murmur
+[![](https://images.microbadger.com/badges/image/zaggash/docker-murmur.svg)](https://microbadger.com/images/zaggash/docker-murmur "Get your own image badge on microbadger.com")
+[hub]: https://hub.docker.com/r/zaggash/docker-murmur/
 
 ![https://wiki.mumble.info/wiki/Main_Page](https://wiki.mumble.info/logo.png)
 
