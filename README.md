@@ -1,4 +1,4 @@
-Base on linuxserver.io baseimage but not supported by them directly
+Based on linuxserver.io baseimage but NOT SUPPORTED by them.
 
 # zaggash/docker-murmur
 [![](https://images.microbadger.com/badges/image/zaggash/docker-murmur.svg)](https://microbadger.com/images/zaggash/docker-murmur "Get your own image badge on microbadger.com")
@@ -8,7 +8,6 @@ Base on linuxserver.io baseimage but not supported by them directly
 
 Mumble is an open source, low-latency, high quality voice chat software primarily intended for use while gaming.
 
-Based on linuxserver.io baseimage but NOT SUPPORTED by them.
 
 ## Usage
 
@@ -35,8 +34,3 @@ docker run -d \
 **TL;DR** - The `PGID` and `PUID` values set the user / group you'd like your container to 'run as' to the host OS. This can be a user you've created or even root (not recommended).
 
 Part of what makes our containers work so well is by allowing you to specify your own `PUID` and `PGID`. This avoids nasty permissions errors with relation to data volumes (`-v` flags). When an application is installed on the host OS it is normally added to the common group called users, Docker apps due to the nature of the technology can't be added to this group. So we added this feature to let you easily choose when running your containers.
-
-
-## Versions
-+ **18-08-2016:** Rebase to apline
-+ **23-01-2016:** This is the standard Version type now. 
