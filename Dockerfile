@@ -1,6 +1,8 @@
 FROM lsiobase/alpine
 MAINTAINER zaggash
 
+ENV VERSION=1.2.17
+
 # install packages
 RUN \
  apk add --no-cache --virtual=build-dependencies \
