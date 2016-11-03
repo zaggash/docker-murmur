@@ -1,7 +1,7 @@
 FROM lsiobase/alpine
 MAINTAINER zaggash
 
-ENV VERSION=1.2.17
+ENV MURMUR_VERSION=1.2.17
 
 # install packages
 RUN \
@@ -11,7 +11,6 @@ RUN \
  	openssl \
 	icu-libs && \
 	
- MURMUR_VERSION=$(curl -sX GET  "https://api.github.com/repos/mumble-voip/mumble/releases/latest" | awk '/tag_name/{print $4;exit}' FS='[""]') && \
  wget -q \
         https://github.com/mumble-voip/mumble/releases/download/${MURMUR_VERSION}/murmur-static_x86-${MURMUR_VERSION}.tar.bz2 -O - |\
         bzcat -f |\
