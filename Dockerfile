@@ -2,7 +2,7 @@ FROM lsiobase/alpine
 
 LABEL maintainer "zaggash"
 
-ENV MURMUR_VERSION=1.2.17
+ENV MURMUR_VERSION=1.2.19
 
 # install packages
 RUN \
